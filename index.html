@@ -2,10 +2,188 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
+            <div class="header" id="searchbox">
+                <img src="assets/search.png" class="icon" alt="">
+                <input type="text" size="60" placeholder="Search">
+            </div>
+            <div class="user1" id="user1">
+                <img src="assets/notification.png" class="icon" alt="">
+                <img src="assets/morgan.jpg" alt="">
+                <p><b>Morgan Oakley</b></p>
+            </div>
+            <div class="greeting" id="greeting">
+                <img src="assets/morgan.jpg" alt="" class="icon">
+                <div class="greet">
+                    <p class="hi">Hi there,</p>
+                    <p class="username">Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+            <div class="buttons" id="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="dashboard">
+                <img src="assets/dashboard.png" alt="">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="user">
+                <div class="home">
+                    <img src="assets/home.png" class="icon" alt="">
+                    <a href="">Home</a>
+                </div>
+                <div class="profile">
+                    <img src="assets/profile.png" class="icon" alt="">
+                    <a href="">Profile</a>
+                </div>
+                <div class="messages">
+                    <img src="assets/message.png" class="icon" alt="">
+                    <a href="">Messages</a>
+                </div>
+                <div class="history">
+                    <img src="assets/history.png" class="icon" alt="">
+                    <a href="">History</a>
+                </div>
+                <div class="tasks">
+                    <img src="assets/tasks.png" class="icon" alt="">
+                    <a href="">Tasks</a>
+                </div>
+                <div class="communities">
+                    <img src="assets/communities.png" class="icon" alt="">
+                    <a href="">Communities</a>
+                </div>
+            </div>
+            <div class="control">
+                <div class="setting">
+                    <img src="assets/setting.png" class="icon" alt="">
+                    <a href="">Settings</a>
+                </div>
+                <div class="support">
+                    <img src="assets/support.png" class="icon" alt="">
+                    <a href="">Support</a>
+                </div>
+                <div class="privacy">
+                    <img src="assets/privacy.png" class="icon" alt="">
+                    <a href="">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="article" id="article">
+            <p class="projects">Your Projects</p>
+            <div class="cards">
+                <div class="card">
+                    <p class="title">Super Cool Project</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Less Cool Project</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Impossible App</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Easy Peasy App</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Ad Blocker</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="title">Money Maker</p>
+                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="commands">
+                        <img src="assets/favorite.png" alt="" class="icon">
+                        <img src="assets/view.png" alt="" class="icon">
+                        <img src="assets/share.png" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news" id="news">
+            <div class="upper">
+                <p class="projects">Announcements</p>
+                <div class="announcement">
+                    <p class="title">Site Maintenance</p>
+                    <p class="desc">Neque porro quisquam est dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                </div>
+                <div class="announcement">
+                    <p class="title">Community Share Day</p>
+                    <p class="desc">Neque porro quisquam est dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                </div>
+                <div class="announcement">
+                    <p class="title">Updated Privacy Policy</p>
+                    <p class="desc">Neque porro quisquam est dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                </div>
+            </div>
+            <p class="projects">Trending</p>
+            <div class="announcements">
+                <div class="account">
+                    <img src="assets/tegan.jpg" alt="">
+                    <div class="user2">
+                        <p class="userid">@tegan</p>
+                        <p class="tag">World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <img src="assets/morgan.jpg" alt="">
+                    <div class="user2">
+                        <p class="userid">@morgan</p>
+                        <p class="tag">Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <img src="assets/kendall.jpg" alt="">
+                    <div class="user2">
+                        <p class="userid">@kendall</p>
+                        <p class="tag">Life Changing App</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <img src="assets/alex.jpg" alt="">
+                    <div class="user2">
+                        <p class="userid">@alex</p>
+                        <p class="tag">No Traffic Maker</p>
+                    </div> 
+                </div>
+        </div>
     </body>
 </html>
