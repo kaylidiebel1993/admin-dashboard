@@ -1,0 +1,271 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+    height: 100%; 
+    display: grid; 
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr); 
+    grid-template-areas: 
+    "sidebar header header header header"
+    "sidebar article article article news"
+    "sidebar article article article news"
+    "sidebar article article article news"
+    "sidebar article article article news"; 
+}
+
+.header {
+    display: grid; 
+    grid-template: repeat(1, 1fr) repeat(1, 1fr) / repeat(1, 4fr) repeat(1, 2fr);
+    grid-template-areas: 
+    "searchbox user1"
+    "greeting buttons";
+    box-shadow: 0px 2px #94a3b8; 
+    z-index: 1;
+}
+
+.searchbox {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    padding-left: 30px; 
+}
+
+.searchbox input {
+    border-radius: 15px; 
+    border: none; 
+    background-color: #d4d4d8; 
+    padding: 10px; 
+    padding-left: 30px; 
+}
+
+.user1 {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding-right: 40px; 
+}
+
+.user1 img[src="assets/morgan.jpg"] {
+    height: 30px;
+    width: 30px; 
+    border-radius: 50%; 
+}
+
+.greeting {
+    display: flex; 
+    padding-left: 40px; 
+}
+
+.greeting img {
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%; 
+}
+
+.greeting .hi {
+    font-weight: bold;
+    margin: 0; 
+}
+
+.greeting .username {
+    font-weight: bold; 
+    font-size: x-large; 
+    margin: 0; 
+}
+.greet {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding-left: 20px; 
+}
+
+.buttons {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.buttons button {
+    background-color: #1992d4; 
+    padding: 10px 20px 10px 20px; 
+    border-radius: 20px; 
+    border: none; 
+    color: white;
+    font-weight: bold; 
+    width: 80px; 
+}
+
+.sidebar {
+    background-color: #1992d4; 
+}
+
+.dashboard {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    padding-left: 20px; 
+}
+
+.dashboard h1 {
+    display: inline; 
+    color: white; 
+}
+
+.user, .control {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 35px; 
+}
+
+.user a, .control a {
+    text-decoration: none; 
+    font-weight: bold; 
+    color: white; 
+}
+
+.user div, .control div {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    width: 100%;
+    max-height: fit-content;
+    padding-left: 50px; 
+}
+
+.icon {
+    width: 20px;
+    height: 20px; 
+    padding: 10px; 
+}
+
+.article {
+    background-color: #d4d4d8;
+    padding: 10px; 
+}
+
+.projects {
+    font-weight: bold; 
+    margin: 5px; 
+}
+
+.cards {
+    display: grid; 
+    grid-template: repeat(3, 1fr) / repeat(2/ 1fr); 
+    grid-template-areas: 
+    "card card"
+    "card card"
+    "card card"; 
+    gap: 15px; 
+}
+
+.card {
+    background-color: white; 
+    border-radius: 5px; 
+    border-left: 5px solid orange; 
+    padding: 0px 10px; 
+    box-shadow: 2px 2px #94a3b8; 
+}
+
+.card, .title {
+    font-weight: bold; 
+    font-size: small; 
+}
+
+.card .desc {
+    font-size: smaller; 
+}
+
+.card .commands {
+    display: flex; 
+    justify-content: end; 
+}
+
+.news {
+    background-color: #d4d4d8;
+    padding: 10px; 
+}
+
+.news .announcements {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px #93a3b8;
+}
+
+.news .announcements .announcement {
+    border-bottom: 1px solid #d4d4d8; 
+}
+
+.news .announcements .announcement .title {
+    font-size: xx-small; 
+    font-weight: bold; 
+}
+
+.news .announcements .announcement .desc {
+    font-size: xx-small; 
+}
+
+.announcements .account {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+}
+
+.account img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+}
+
+.account .user2 {
+    padding-left: 15px; 
+}
+
+.account .user2 .userid {
+    font-weight: bold; 
+    font-size: xx-small; 
+}
+
+.account .user2 .tag {
+    font-size: xx-small; 
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar; 
+}
+
+#article {
+    grid-area: article; 
+}
+
+#news {
+    grid-area: news; 
+}
+
+#searchbox {
+    grid-area: searchbox; 
+}
+
+#user1 {
+    grid-area: user1; 
+}
+
+#greeting {
+    grid-area: greeting; 
+}
+
+#buttons {
+    grid-area: buttons; 
+}
+
+#card {
+    grid-area: card; 
+}
